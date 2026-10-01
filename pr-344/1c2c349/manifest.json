@@ -1,0 +1,74 @@
+{
+  "summary": "网关页新增「网关密钥」区块（只在开启局域网共享后显示）：可创建、复制、就地重命名、启停、轮换和移除具名密钥，轮换/移除前有确认框；「接入」区改为可选本机或局域网地址，并从「本机」或某个已启用的网关密钥里选密钥来生成示例；用量页与请求页新增按网关密钥分组/筛选的入口。",
+  "scenes": [
+    {
+      "title": "开启共享后出现「网关密钥」区块并创建密钥",
+      "shots": [
+        {
+          "file": "01-gateway-before-sharing.png",
+          "caption": "局域网共享关闭时的网关页",
+          "width": 2560
+        },
+        {
+          "file": "02-gateway-keys-block.png",
+          "caption": "共享开启后的「网关密钥」区块",
+          "width": 2560
+        },
+        {
+          "file": "03-gateway-key-form.png",
+          "caption": "新密钥的名称输入框",
+          "width": 2560
+        },
+        {
+          "file": "04-gateway-keys-list.png",
+          "caption": "创建后的密钥列表",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "密钥的改名、轮换确认与接入区的密钥选择",
+      "shots": [
+        {
+          "file": "05-gateway-key-rename.png",
+          "caption": "重命名的输入框",
+          "width": 2560
+        },
+        {
+          "file": "06-rotate-confirm.png",
+          "caption": "轮换密钥前的确认框",
+          "width": 2560
+        },
+        {
+          "file": "07-connect-key-menu.png",
+          "caption": "密钥下拉：本机与已启用的网关密钥",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "用量页与请求页上看客户端归属的位置",
+      "shots": [
+        {
+          "file": "08-usage-overview.png",
+          "caption": "用量概览",
+          "width": 2560
+        },
+        {
+          "file": "09-usage-requests.png",
+          "caption": "请求列表与筛选",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒里已有的网关请求用的是本机 magpie 令牌，不带网关密钥归属，所以用量概览的「网关密钥」分组、请求页的密钥筛选按钮和 CSV 里的 caller_key_* 列都没有数据可显示（只能看到它们所在的位置）；密钥的 headless 管理（magpie gateway-key list/add/rotate/remove）与备份、迁移行为不在浏览器界面里，也无法在录屏中展示。",
+  "interactive": true,
+  "pages": 4
+}

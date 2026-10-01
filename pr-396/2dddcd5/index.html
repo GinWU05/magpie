@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#396 界面预览 · 2dddcd5</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#396 界面预览</h1><p class="m">commit 2dddcd5 · <a href="https://github.com/yetone/magpie/pull/396">回到 PR</a> · 在「路由」页的请求列表上加了「按请求 / 按会话」切换和按会话分组的标题行（Agent·会话名、请求数/token/进行中、会话估算合计），并给每条请求的 meta 加上按有效价格估算的费用（含缓存读写，货币切换后重绘）；后端把这些请求的会话 ID、父会话和 token 分档写进路由历史与 trace，并新增按 ID 读取 Codex 本地会话名的接口。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-routing-requests-default.png" alt="路由页的请求列表：默认分组方式，以及每条请求右侧的费用"><figcaption>路由请求列表：分组切换与每条请求的估算费用 · 路由页的请求列表：默认分组方式，以及每条请求右侧的费用</figcaption></figure>
+<figure><img src="02-routing-by-request.png" alt="「按请求」下的请求列表"><figcaption>路由请求列表：分组切换与每条请求的估算费用 · 「按请求」下的请求列表</figcaption></figure>
+<figure><img src="03-routing-by-session.png" alt="「按会话」下的请求列表"><figcaption>路由请求列表：分组切换与每条请求的估算费用 · 「按会话」下的请求列表</figcaption></figure>
+<figure><img src="04-settings-currency-usd.png" alt="设置里的货币，当前为美元"><figcaption>切换货币后路由估算费用的重绘 · 设置里的货币，当前为美元</figcaption></figure>
+<figure><img src="05-settings-currency-cny.png" alt="货币为人民币时的设置"><figcaption>切换货币后路由估算费用的重绘 · 货币为人民币时的设置</figcaption></figure>
+<figure><img src="06-routing-costs-cny.png" alt="人民币下路由请求列表里的费用"><figcaption>切换货币后路由估算费用的重绘 · 人民币下路由请求列表里的费用</figcaption></figure>
+</main></html>

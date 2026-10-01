@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#344 界面预览 · 1c2c349</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#344 界面预览</h1><p class="m">commit 1c2c349 · <a href="https://github.com/yetone/magpie/pull/344">回到 PR</a> · 网关页新增「网关密钥」区块（只在开启局域网共享后显示）：可创建、复制、就地重命名、启停、轮换和移除具名密钥，轮换/移除前有确认框；「接入」区改为可选本机或局域网地址，并从「本机」或某个已启用的网关密钥里选密钥来生成示例；用量页与请求页新增按网关密钥分组/筛选的入口。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-gateway-before-sharing.png" alt="局域网共享关闭时的网关页"><figcaption>开启共享后出现「网关密钥」区块并创建密钥 · 局域网共享关闭时的网关页</figcaption></figure>
+<figure><img src="02-gateway-keys-block.png" alt="共享开启后的「网关密钥」区块"><figcaption>开启共享后出现「网关密钥」区块并创建密钥 · 共享开启后的「网关密钥」区块</figcaption></figure>
+<figure><img src="03-gateway-key-form.png" alt="新密钥的名称输入框"><figcaption>开启共享后出现「网关密钥」区块并创建密钥 · 新密钥的名称输入框</figcaption></figure>
+<figure><img src="04-gateway-keys-list.png" alt="创建后的密钥列表"><figcaption>开启共享后出现「网关密钥」区块并创建密钥 · 创建后的密钥列表</figcaption></figure>
+<figure><img src="05-gateway-key-rename.png" alt="重命名的输入框"><figcaption>密钥的改名、轮换确认与接入区的密钥选择 · 重命名的输入框</figcaption></figure>
+<figure><img src="06-rotate-confirm.png" alt="轮换密钥前的确认框"><figcaption>密钥的改名、轮换确认与接入区的密钥选择 · 轮换密钥前的确认框</figcaption></figure>
+<figure><img src="07-connect-key-menu.png" alt="密钥下拉：本机与已启用的网关密钥"><figcaption>密钥的改名、轮换确认与接入区的密钥选择 · 密钥下拉：本机与已启用的网关密钥</figcaption></figure>
+<figure><img src="08-usage-overview.png" alt="用量概览"><figcaption>用量页与请求页上看客户端归属的位置 · 用量概览</figcaption></figure>
+<figure><img src="09-usage-requests.png" alt="请求列表与筛选"><figcaption>用量页与请求页上看客户端归属的位置 · 请求列表与筛选</figcaption></figure>
+</main></html>
